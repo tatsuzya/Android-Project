@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="matrix_dimension">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="square_matrix_dimension">
+        <item>1 x 1</item>
+        <item>2 x 2</item>
+        <item>3 x 3</item>
+    </string-array>
+</resources>

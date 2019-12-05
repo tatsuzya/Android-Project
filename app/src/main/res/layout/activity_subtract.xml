@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubtractActivity"
+    android:id="@+id/subtract_layout">
+
+    <TextView
+        android:id="@+id/textView_row_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/row"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/column"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_col"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/matrix_dimension"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/textView_row_A"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/matrix_dimension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calc_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridView
+        android:id="@+id/grid_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_col"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="203dp" >
+
+    </GridView>
+
+    <GridView
+        android:id="@+id/grid_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grid_A"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/grid_B"
+        android:paddingVertical="20dp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <GridView
+        android:id="@+id/grid_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-41dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

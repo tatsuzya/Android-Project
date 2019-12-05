@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">testcalc</string>
+    <string name="add">ADD</string>
+    <string name="add_description">This is for adding two matrices of the same dimension.</string>
+    <string name="subtract">SUBTRACT</string>
+    <string name="det">DET</string>
+    <string name="row">Row:</string>
+    <string name="column">Column:</string>
+    <string name="calculate">Calculate</string>
+    <string name="a">A =</string>
+    <string name="row_a">Row_A</string>
+    <string name="col_a">Col_A</string>
+    <string name="row_b">Row_B</string>
+    <string name="col_b">Col_B</string>
+    <string name="dimension_only_square_matrix_has_an_inverse">Dimension (Only square matrix\nhas an inverse) :</string>
+    <string name="lambda">Lambda: (z = x + yi)</string>
+    <string name="dimension_only_square_matrix_ncan_be_eigendecomposed">Dimension (Only square matrix\ncan be Eigendecomposed)</string>
+    <string name="eigenvector_unit_vector_length_1">Eigenvector (unit vector, length = 1)</string>
+    <string name="dimension_only_square_matrix_has_a_determinant">Dimension (Only square matrix\nhas a determinant)</string>
+    <string name="determinant">Determinant:</string>
+    <string name="dimension_only_square_matrix_ncan_be_diagonalized">Dimension (Only square matrix\ncan be diagonalized)</string>
+    <string name="diagonalized_matrix">Diagonalized Matrix (orders of Lambda may vary)</string>
+</resources>
